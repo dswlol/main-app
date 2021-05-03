@@ -13,7 +13,7 @@ jobs:
     - name: Build and Deploy
       uses: JamesIves/github-pages-deploy-action@4.1.1
       env:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.TOKEN }}
         BRANCH: main
         FOLDER: build
         BUILD_SCRIPT: npm install && npm run build
