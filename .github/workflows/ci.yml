@@ -21,3 +21,5 @@ jobs:
         ACCESS_TOKEN: ${{ secrets.TOKEN }}
         BRANCH: main
         FOLDER: dist
+    - name: rename
+      run: mv dist build
